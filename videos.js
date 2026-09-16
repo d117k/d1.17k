@@ -6,10 +6,10 @@ const VIDEOS = [
     poster: "videos/thumbnail1.png"
   },
   {
-    title: "Raq youngin 3d",
+    title: "Biscoff",
     category: "VFX / Music Video",
-    src: "videos/notevenaremake.mp4",
-    poster: "videos/thumbnail2.png"
+    src: "videos/biscoff.mp4",
+    poster: "videos/biscoo.png"
   },
   {
     title: "Kashdami warp",
@@ -18,9 +18,9 @@ const VIDEOS = [
     poster: "videos/rahgzo.png"
   },
   {
-    title: "Biscoff",
+    title: "Raq youngin 3d",
     category: "VFX / Music Video",
-    src: "videos/biscoff.mp4",
-    poster: "videos/biscoo.png"
+    src: "videos/notevenaremake.mp4",
+    poster: "videos/thumbnail2.png"
   }   
 ];
