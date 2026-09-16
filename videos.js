@@ -10,5 +10,11 @@ const VIDEOS = [
     category: "VFX / Music Video",
     src: "videos/notevenaremake.mp4",
     poster: "videos/thumbnail2.png"
+  },
+  {
+    title: "kashdami warp",
+    category: "VFX / Music Video",
+    src: "videos/rahgz.mp4",
+    poster: "videos/rahgzo.png"
   }
 ];
