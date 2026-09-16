@@ -16,4 +16,5 @@ const VIDEOS = [
     category: "VFX / Music Video",
     src: "videos/rahgz.mp4",
     poster: "videos/rahgzo.png"
+  }
 ];
