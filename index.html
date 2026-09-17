@@ -46,7 +46,7 @@
     <span>© 2026 d1.17k</span>
     <div>
       <a href="https://instagram.com/d1.17k" target="_blank" rel="noreferrer">Instagram</a>
-      <a href="deeonecinhe@gmail.com">Email</a>
+      <a href="contact.html">Email</a>
     </div>
   </footer>
 
@@ -59,22 +59,52 @@
     VIDEOS.forEach((v, i) => {
       const card = document.createElement('article');
       card.className = 'card';
-      card.innerHTML = `
-        <div class="media">
-          <video src="${v.src}" ${v.poster ? `poster="${v.poster}"` : ''} muted loop playsinline preload="metadata"></video>
-          <div class="play">PLAY</div>
-        </div>
-        <div class="meta">
-          <div><h3>${v.title}</h3><p>${v.category || ''}</p></div>
-          <span>${String(i+1).padStart(2,'0')}</span>
-        </div>`;
-      const video = card.querySelector('video');
-      const media = card.querySelector('.media');
-      media.addEventListener('mouseenter', () => video.play().catch(()=>{}));
-      media.addEventListener('mouseleave', () => { video.pause(); video.currentTime = 0; });
-      media.addEventListener('click', () => {
-        if (video.paused) video.play().catch(()=>{}); else video.pause();
-      });
+     card.innerHTML = `
+  <div class="media">
+    ${v.poster ? `<img class="thumbnail" src="${v.poster}" alt="${v.title} thumbnail">` : ''}
+    <video src="${v.src}" loop playsinline preload="metadata"></video>
+    <div class="play">PLAY</div>
+  </div>
+  <div class="meta">
+    <div><h3>${v.title}</h3><p>${v.category || ''}</p></div>
+    <span>${String(i+1).padStart(2,'0')}</span>
+  </div>`;
+
+const video = card.querySelector('video');
+const thumbnail = card.querySelector('.thumbnail');
+const media = card.querySelector('.media');
+
+media.addEventListener('mouseenter', () => {
+  if (thumbnail) thumbnail.style.opacity = '0';
+  video.style.opacity = '1';
+  video.play().catch(() => {});
+});
+
+media.addEventListener('mouseleave', () => {
+  video.pause();
+  video.currentTime = 0;
+  video.style.opacity = '0';
+
+  if (thumbnail) {
+    thumbnail.style.opacity = '1';
+  }
+});
+
+media.addEventListener('click', () => {
+  if (video.paused) {
+    if (thumbnail) thumbnail.style.opacity = '0';
+    video.style.opacity = '1';
+    video.play().catch(() => {});
+  } else {
+    video.pause();
+    video.currentTime = 0;
+    video.style.opacity = '0';
+
+    if (thumbnail) {
+      thumbnail.style.opacity = '1';
+    }
+  }
+});
       grid.appendChild(card);
     });
   </script>
