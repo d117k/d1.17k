@@ -18,9 +18,15 @@ const VIDEOS = [
     poster: "videos/rahgzo.png"
   },
   {
+    title: "Tears",
+    category: "VFX / Music Video",
+    src: "videos/macej.mp4",
+    poster: "videos/tears.png"
+  },
+  {
     title: "Raq youngin 3d",
     category: "VFX / Music Video",
     src: "videos/notevenaremake.mp4",
-    poster: "videos/thumbnail2.png"
+    poster: "videos/thumbnail2.png" 
   }   
 ];
