@@ -26,3 +26,42 @@
   opacity: 0;
   transition: opacity 0.2s ease;
 }
+
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: -30%;
+  width: 30%;
+  height: 2px;
+  z-index: 9999;
+  pointer-events: none;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 0, 80, 0.7),
+    rgba(120, 0, 255, 0.7),
+    rgba(0, 180, 255, 0.7),
+    transparent
+  );
+
+  filter: blur(1px);
+  opacity: 0.45;
+
+  animation: rgbChase 5s linear infinite;
+}
+
+@keyframes rgbChase {
+  0% {
+    left: -30%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
