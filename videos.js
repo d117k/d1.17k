@@ -6,10 +6,10 @@ const VIDEOS = [
     poster: "videos/thumbnail1.png"
   },
   {
-    title: "Biscoff",
+    title: "Ceo Gucci x Faneto",
     category: "VFX / Music Video",
-    src: "videos/biscoff.mp4",
-    poster: "videos/biscoo.png"
+    src: "videos/ce.mp4",
+    poster: "videos/ceotray.png"
   },
   {
     title: "Kashdami warp",
@@ -27,6 +27,12 @@ const VIDEOS = [
     title: "Raq youngin 3d",
     category: "VFX / Music Video",
     src: "videos/notevenaremake.mp4",
-    poster: "videos/youngin.png" 
+    poster: "videos/youngin.png"
+   },
+  {
+    title: "Biscoff",
+    category: "VFX / Music Video",
+    src: "videos/biscoff.mp4",
+    poster: "videos/biscoo.png" 
   }   
 ];
