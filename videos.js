@@ -27,6 +27,6 @@ const VIDEOS = [
     title: "Raq youngin 3d",
     category: "VFX / Music Video",
     src: "videos/notevenaremake.mp4",
-    poster: "videos/thumbnail2.png" 
+    poster: "videos/youngin.png" 
   }   
 ];
