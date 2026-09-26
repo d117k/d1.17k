@@ -3,7 +3,7 @@ const VIDEOS = [
     title: "Faneto",
     category: "VFX / Music Video",
     src: "videos/shitted.mp4",
-    poster: "videos/thumbnail1.png"
+    poster: "videos/fanett.png"
   },
   {
     title: "Ceo Gucci x Faneto",
